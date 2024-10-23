@@ -61,9 +61,10 @@ entity Months {
 };
 
 entity ProductReviews {
-    key Name         : String;
+    key ID           : UUID;
         ToProduct_Id : UUID;
         CreatedAt    : DateTime;
+        Name         : String;
         Rating       : Integer;
         Comment      : String;
 };
